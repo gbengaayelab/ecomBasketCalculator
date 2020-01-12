@@ -26,24 +26,25 @@
                     <input type="range" class="form-control border border-primary rounded quantity_input" value="1"
                     min="1" max="100" name="quantity">
             </form>
-                <div class="text-right text-primary"><h3 class="display:3 total_price"></h3></div>
-             </div>
-            </div>
-       </div>
+            <div class="text-right text-primary"><h3 class="display:3 total_price"></h3></div>
+                </div>
+                </div>
+                </div>
         <div class="col-sm-3 m-3 p-3"></div>
+        </div>
     </div>
     <script>
         // Grab Everything I need
         const priceGrabber= document.querySelector('.price_input'); //OR const priceGrabber= document.querySelector('[name=price]');
         const quantityGrabber= document.querySelector('.quantity_input'); //OR const priceGrabber= document.querySelector('[name=quantity]');
         const totalPriceGrabber= document.querySelector('.total_price');
-      const labelGrabber= document.querySelector('.quantityLabelRange');
+        const labelGrabber= document.querySelector('.quantityLabelRange');
         // Create all the functions needed
         const calCulateCost = () =>{
             const price =priceGrabber.value;
             const quantity=quantityGrabber.value;
-            const totalPrice= price*quantity;
-          totalPriceGrabber.innerText=`${totalPrice.toFixed(2)} NGN`;
+            const totalPrice= price*quantity;                    
+            totalPriceGrabber.innerText=`${totalPrice.toFixed(2)} NGN`;
         }
         const quantityLabelShow = () =>{
             const quantity=quantityGrabber.value;
