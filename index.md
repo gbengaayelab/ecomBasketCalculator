@@ -14,10 +14,11 @@
             <div class="border text-center"> 
                 <div class="jumbotron p-3 m-3 border rounded border-prilightmary justify-content-center">
                 <h2 class="display:2">Basket Size for Groceries?</h2>
-            <form>
+            <form> 
                 <div class="form-group">
                     <label for="Price">Price</label>
                     <input type="text" class="form-control text-left price_input" name="price" value="500"> 
+                </div>
                 <div class="form-group">
                     <label for="quantity" class="text-left" name="quantity">
                         Quantity
@@ -25,14 +26,14 @@
                     </label>
                     <input type="range" class="form-control border border-primary rounded quantity_input" value="1"
                     min="1" max="100" name="quantity">
+                </div>
+             <div class="tex</form>t-right text-primary"><h3 class="display:3 total_price"></h3></div>  
             </form>
-            <div class="text-right text-primary"><h3 class="display:3 total_price"></h3></div>
                 </div>
                 </div>
                 </div>
         <div class="col-sm-3 m-3 p-3"></div>
         </div>
-    </div>
     <script>
         // Grab Everything I need
         const priceGrabber= document.querySelector('.price_input'); //OR const priceGrabber= document.querySelector('[name=price]');
